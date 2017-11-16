@@ -11,7 +11,7 @@ class Acompannamiento extends Model
   protected $primaryKey = 'id';
 
   protected $fillable = [
-      'nombre', 'descripcion',
+      'nombre', 'descripcion','precio',
   ];
   
   public function menus() {

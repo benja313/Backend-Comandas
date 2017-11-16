@@ -11,7 +11,7 @@ class Agregado extends Model
   protected $primaryKey = 'id';
 
   protected $fillable = [
-      'nombre', 'descripcion', 'id_tipo_agregado',
+      'nombre', 'descripcion', 'precio','id_tipo_agregado', 
   ];
   
   public function tipo_agregado() {

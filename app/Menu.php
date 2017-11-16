@@ -11,7 +11,7 @@ class Menu extends Model
   protected $primaryKey = 'id';
 
   protected $fillable = [
-      'nombre', 'descripcion', 'id_acompannamiento',
+      'nombre', 'descripcion', 'precio', 'id_acompannamiento',
   ];
 
   public function menu_comandas() {

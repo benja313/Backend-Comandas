@@ -18,7 +18,7 @@ class Venta extends Migration
             $table->integer('monto');
             $table->date('fecha');
             $table->time('hora');
-                $table->timestamps();
+            $table->timestamps();
         });
     }
 
