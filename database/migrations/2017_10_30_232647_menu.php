@@ -20,7 +20,7 @@ class Menu extends Migration
             $table->integer('precio');
             $table->integer('id_acompannamiento')->unsigned()->nullable();
             $table->foreign('id_acompannamiento')->references('id')->on('acompannamiento');
-                $table->timestamps();
+            $table->timestamps();
 
         });
     }

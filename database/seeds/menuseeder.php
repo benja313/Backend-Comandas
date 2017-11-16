@@ -15,6 +15,7 @@ class menuseeder extends Seeder
       'id' => 1,
   		'nombre' => 'filete',
       'descripcion' => 'filete punto cualquiera',
+      'precio' => '5000',
       'id_acompannamiento' => '1',
     
       ]);
@@ -23,6 +24,7 @@ class menuseeder extends Seeder
       'id' => 2,
   		'nombre' => 'salmon',
       'descripcion' => 'salmon a la plancha',
+      'precio' => '5000',
       'id_acompannamiento' => '1',
     
       ]);
@@ -30,6 +32,7 @@ class menuseeder extends Seeder
       'id' => 3,
   		'nombre' => 'pollo',
       'descripcion' => 'pollo a la plancha',
+      'precio' => '4000',
       'id_acompannamiento' => '1',
     
       ]);
@@ -37,6 +40,7 @@ class menuseeder extends Seeder
       'id' => 4,
   		'nombre' => 'chuletas de cordero',
       'descripcion' => 'chuletas cordero',
+      'precio' => '4500',
       'id_acompannamiento' => '1',
     
       ]);

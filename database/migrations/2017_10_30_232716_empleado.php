@@ -19,8 +19,7 @@ class Empleado extends Migration
             $table->string('rut',10);
             $table->integer('id_cargo')->unsigned();
             $table->foreign('id_cargo')->references('id')->on('cargo');
-                $table->timestamps();
-
+            $table->timestamps();
         });  
           }
 

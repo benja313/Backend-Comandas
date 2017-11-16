@@ -20,7 +20,7 @@ class AgregadoMenuComanda extends Migration
             $table->foreign('id_agregado')->references('id')->on('agregado');
             $table->integer('id_menu_comanda')->unsigned();
             $table->foreign('id_menu_comanda')->references('id')->on('menu_comnada');
-                $table->timestamps();
+            $table->timestamps();
 
         });
     }

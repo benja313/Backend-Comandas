@@ -20,7 +20,7 @@ class Agregado extends Migration
             $table->integer('precio');
             $table->integer('id_tipo_agregado')->unsigned();
             $table->foreign('id_tipo_agregado')->references('id')->on('tipo_agregado');
-                $table->timestamps();
+            $table->timestamps();
 
         });
     }

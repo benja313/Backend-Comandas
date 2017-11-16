@@ -18,7 +18,7 @@ class Acompannamiento extends Migration
             $table->string('nombre', 30);
             $table->string('descripcion', 60);
             $table->integer('precio');
-                $table->timestamps();
+            $table->timestamps();
 
         });
     }
