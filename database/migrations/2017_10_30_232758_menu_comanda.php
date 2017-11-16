@@ -20,6 +20,7 @@ class MenuComanda extends Migration
             $table->foreign('id_menu')->references('id')->on('menu');
             $table->integer('id_comanda')->unsigned();
             $table->foreign('id_comanda')->references('id')->on('comanda');
+                $table->timestamps();
 
         });
     }

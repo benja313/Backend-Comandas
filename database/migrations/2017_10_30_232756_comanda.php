@@ -25,6 +25,7 @@ class Comanda extends Migration
             $table->foreign('id_venta')->references('id')->on('venta');
             $table->integer('id_mesa')->unsigned();
             $table->foreign('id_mesa')->references('id')->on('mesa');
+                $table->timestamps();
 
         });
     }

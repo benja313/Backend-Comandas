@@ -16,6 +16,7 @@ class Mesa extends Migration
         Schema::create('mesa', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('nro_mesa');
+                $table->timestamps();
         });
     }
 

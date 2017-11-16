@@ -19,6 +19,7 @@ class Menu extends Migration
             $table->string('descripcion',60);
             $table->integer('id_acompannamiento')->unsigned()->nullable();
             $table->foreign('id_acompannamiento')->references('id')->on('acompannamiento');
+                $table->timestamps();
 
         });
     }

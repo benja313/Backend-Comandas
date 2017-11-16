@@ -17,6 +17,7 @@ class TipoAgregado extends Migration
             $table->increments('id');
             $table->string('nombre',30);
             $table->string('descripcion',60);
+                $table->timestamps();
 
         });
     }
