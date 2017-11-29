@@ -169,6 +169,7 @@ return [
         Barryvdh\Cors\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        
 
         /*
          * Application Service Providers...
@@ -178,6 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Nexmo\Laravel\NexmoServiceProvider::class,
 
     ],
 
@@ -230,6 +232,7 @@ return [
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
         'Input' => Illuminate\Support\Facades\Input::class,
+        'Nexmo' => Nexmo\Laravel\Facade\Nexmo::class,
     ],
 
 ];

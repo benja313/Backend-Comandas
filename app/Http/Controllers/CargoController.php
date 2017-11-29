@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cargo;
+use Nexmo\Laravel\Facade\Nexmo;
 
 class CargoController extends Controller
 {
@@ -15,6 +16,7 @@ class CargoController extends Controller
     public function index()
     {
         return Cargo::all();
+   
     }
 
     /**
