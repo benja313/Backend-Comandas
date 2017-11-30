@@ -16,6 +16,11 @@ class CargoController extends Controller
     public function index()
     {
         return Cargo::all();
+         Nexmo::message()->send([
+    'to'   => '56961765325 ',
+    'from' => 'NEXMO' ,
+    'text' => 'Hola, prueba sms'
+]);
    
     }
 

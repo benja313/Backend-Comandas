@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Menu;
+use App\acompannamiento;
 
 class MenuController extends Controller
 {
@@ -14,7 +15,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return Menu::all();
+        return Menu::with('acompannamiento')->get();
     }
 
     /**

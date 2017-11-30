@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-        Nexmo::message()->send([
+     Nexmo::message()->send([
     'to'   => '56961765325 ',
     'from' => 'NEXMO' ,
     'text' => 'Hola, prueba sms'
 ]);
+     
 });
 
 Auth::routes();

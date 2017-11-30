@@ -14,7 +14,7 @@ class AgregadoMenuComandaController extends Controller
      */
     public function index()
     {
-        return AgregadoMenuComanda::all();
+        return AgregadoMenuComanda::whith('agregados', 'gregados_menu_comanda')->get();
     }
 
     /**

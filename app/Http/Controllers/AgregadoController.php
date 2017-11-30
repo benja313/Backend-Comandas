@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Agregado;
 
+
 class AgregadoController extends Controller
 {
     /**
@@ -14,7 +15,7 @@ class AgregadoController extends Controller
      */
     public function index()
     {
-        return Agregado::all();
+        return Agregado::with('tipo_agregado')->get();
     }
 
     /**
